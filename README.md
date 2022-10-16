@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/devendra-alt/preview-card-component-solution)
-- Live Site URL: [Add live site URL here](https://product-preview-card-com-fd232.web.app/)
+- Solution URL: [Github Repo](https://github.com/devendra-alt/preview-card-component-solution)
+- Live Site URL: [product-preview-card-com](https://product-preview-card-com-fd232.web.app/)
 
 ## My process
 
