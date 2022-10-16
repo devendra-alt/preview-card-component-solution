@@ -1,0 +1,166 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+
+primary color : hsl(158, 36%, 37%)
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+}
+
+.product-page {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (min-width: 501px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product {
+    width: 400px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .product-img {
+    flex: 1;
+    border-radius: 8px 0 0 8px;
+  }
+  .product-details {
+    flex: 1;
+    padding: 12px;
+    /*  8 / 12 / 16 */
+  }
+  .product-details h1 {
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+  .product-details p {
+    font-size: 10px;
+    letter-spacing: 1.7;
+    line-height: 1.5;
+  }
+  .sell-price {
+    font-size: 24px;
+  }
+  .actual-price {
+    font-size: 10px;
+  }
+}
+.cart-btn {
+  padding: 8px;
+  color: hsl(0, 0%, 100%);
+  background-color: #3c8067;
+  border: none;
+  width: 100%;
+  font-size: 10px;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  align-items: center;
+}
+.cart-btn:hover {
+  background-color: #1e4034;
+}
+@media (max-width: 500px) {
+  .product {
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-template-columns: 1;
+    margin: 0 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-img {
+    width: 100%;
+    align-self: flex-start;
+    grid: 1fr;
+    border-radius: 8px 8px 0;
+  }
+  .product-details {
+    padding: 24px;
+    grid: 2fr;
+  }
+  .product-details h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .product-details p {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    line-height: 1.6;
+  }
+  .sell-price {
+    font-size: 34px;
+  }
+  .actual-price {
+    font-size: 14px;
+  }
+  .cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+.product-details h3 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.product-details h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.product-details p {
+  margin-bottom: 16px;
+}
+
+.price {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sell-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.actual-price {
+  text-decoration: line-through;
+}
+
+.product,
+.cart-btn {
+  border-radius: 8px;
+}
