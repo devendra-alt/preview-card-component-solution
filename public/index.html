@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
     <!-- google fonts -->
@@ -18,34 +18,37 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="product-page">
-      <article class="product flex">
-        <img
-          class="product-img"
-          src="image-product-desktop.jpg"
-          alt="gabrielle chanel paris"
-          width="300"
-          height="300"
-        />
+    <main class="product-page">
+      <article class="product grid">
+        <picture>
+          <source media="(min-width: 500)" srcset="image-product-desktop.jpg" />
+          <img
+            src="image-product-mobile.jpg"
+            alt="perfume product"
+            width="275"
+            height="350"
+            class="product-img"
+          />
+        </picture>
         <div class="product-details">
-          <h3>perfume</h3>
+          <p class="sub-heading">perfume</p>
           <h1>Gabrielle Essence Eau De Parfum</h1>
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div class="price">
-            <span class="sell-price">$149.99</span>
-            <span class="actual-price">$169.99</span>
+            <ins class="sell-price">$149.99</ins>
+            <del class="actual-price" aria-label="$169.99">$169.99</del>
           </div>
           <button class="cart-btn flex">
             <span class="cart-icon">
-              <img src="icon-cart.svg" alt="" srcset="" />
+              <img src="icon-cart.svg" alt="cart icon" />
             </span>
             Add to Cart
           </button>
         </div>
       </article>
-    </div>
+    </main>
   </body>
 </html>
